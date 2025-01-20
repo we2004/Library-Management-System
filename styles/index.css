@@ -1,0 +1,14 @@
+body {
+    padding: 0;
+}
+.first-row, .second-row  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.first-row {
+    margin: 20px 0;
+}
+

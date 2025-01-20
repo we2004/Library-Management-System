@@ -1,0 +1,35 @@
+form {
+    text-align: left;
+    padding: 30px 20px;
+}
+
+.memberId,
+.memberName,
+.memberPhone {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    margin-bottom: 15px;
+    color: #738290;
+    font-weight: bold;
+}
+
+#memberId,
+#memberName,
+#memberPhone {
+    background-color: #fffcf7;
+    border: 2px solid #a1b5d8;
+    padding: 5px;
+}
+
+#memberName {
+    text-transform: capitalize;
+}
+
+#memberId:focus,
+#memberName:focus,
+#memberPhone:focus {
+    outline: none;
+    border: 3px solid #738290;
+}

@@ -1,0 +1,50 @@
+form {
+    text-align: left;
+
+    padding: 30px 20px;
+}
+
+.inputs-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+
+    color: #738290;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    align-items: last;
+
+    gap: 5px;
+
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+#bookId,
+#bookTitle,
+#author,
+#year,
+#bMemberId {
+    background-color: #fffcf7;
+    border: 2px solid #a1b5d8;
+    padding: 5px;
+}
+
+#bookId:focus,
+#bookTitle:focus,
+#author:focus,
+#year:focus,
+#bMemberId:focus {
+    outline: none;
+    border: 3px solid #738290;
+}
