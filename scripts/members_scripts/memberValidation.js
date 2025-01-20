@@ -29,10 +29,9 @@ function startTheProgram() {
     memberName = document.querySelector('#memberName').value || '';
     memberPhone = document.querySelector('#memberPhone').value || '';
 
-    if (isMemberIdValid(memberId,'.memberId .js-message',memberIdMessage.LENGTH,memberIdMessage.UNIQUE) && !findMemberId(memberId, '.memberId .js-message', memberIdMessage.UNIQUE,'member') && isMemberNameValid(memberName) && isMemberPhoneValid(memberPhone)) {
+     if (isMemberIdValid(memberId,'.memberId .js-message',memberIdMessage.LENGTH,memberIdMessage.DIGITSONLY) && !findMemberId(memberId, '.memberId .js-message', memberIdMessage.UNIQUE,'member') && isMemberNameValid(memberName) && isMemberPhoneValid(memberPhone)) {
         console.log('entered');
         addMemberToTheList(memberId, memberName, memberPhone);
-
     }
 
 }
